@@ -8,19 +8,13 @@
 
 using namespace std;
 
-class fft
+class fft_r2
 {
 	public:
 	
-	void fft_process(COMPLEX *X_out, COMPLEX x0, COMPLEX x1);
-	void fft_process(COMPLEX *X_out, COMPLEX x0, COMPLEX x1, COMPLEX x2, COMPLEX x3);
-	void fft_process(COMPLEX *X_out,
-			COMPLEX x0, COMPLEX x1,
-			COMPLEX x2, COMPLEX x3,
-			COMPLEX x4, COMPLEX x5,
-			COMPLEX x6, COMPLEX x7);
+	void fft_r2_bf(COMPLEX *X_out, COMPLEX *x_in, int b);
 
-	fft()
+	fft_r2()
 	{
 		W2_0 = 1;
 		W4_0 = 1;
@@ -46,4 +40,9 @@ class fft
 	COMPLEX W8_3;
 };
 
+class fft_r4
+{
+	public:
+	void fft_r4_bf(COMPLEX *X_out, COMPLEX *x_in);
+};
 #endif
