@@ -21,4 +21,5 @@ class fft_r4
 };
 
 void rotate(COMPLEX *x, int k, int n);
+void bit_reverse(COMPLEX *x, int w);
 #endif
