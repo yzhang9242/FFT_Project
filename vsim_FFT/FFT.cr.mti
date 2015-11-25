@@ -1,0 +1,34 @@
+/home/yuanpei/Project/FFT_Project/vsim_FFT/src/complext_utils.v {1 {vlog -work work -stats=none /home/yuanpei/Project/FFT_Project/vsim_FFT/src/complext_utils.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module complex_add
+-- Compiling module complex_sub
+-- Compiling module complex_i
+
+Top level modules:
+	complex_add
+	complex_sub
+	complex_i
+
+} {} {}} /home/yuanpei/Project/FFT_Project/vsim_FFT/fft_utils.v {1 {vlog -work work -stats=none /home/yuanpei/Project/FFT_Project/vsim_FFT/fft_utils.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module r4_bf
+
+Top level modules:
+	r4_bf
+
+} {} {}} /home/yuanpei/Project/FFT_Project/vsim_FFT/r4_unit.v {1 {vlog -work work -stats=none /home/yuanpei/Project/FFT_Project/vsim_FFT/r4_unit.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module r4_unit_ctl
+-- Compiling module r4_unit
+
+Top level modules:
+	r4_unit
+
+} {} {}} /home/yuanpei/Project/FFT_Project/vsim_FFT/complex_tb.v {1 {vlog -work work -stats=none /home/yuanpei/Project/FFT_Project/vsim_FFT/complex_tb.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module complex_tb
+
+Top level modules:
+	complex_tb
+
+} {} {}}

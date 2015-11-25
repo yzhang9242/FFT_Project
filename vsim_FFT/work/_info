@@ -1,0 +1,170 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/yuanpei/altera/15.0/modelsim_ase/bin
+vcomplex_add
+Z0 !s110 1448338367
+!i10b 1
+!s100 KDfJO^IFZ;lmMc06c5h_=3
+IJBaZkAoQd:WXPADe5Zgej2
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 d/home/yuanpei/Project/FFT_Project/vsim_FFT
+Z3 w1448338209
+Z4 8/home/yuanpei/Project/FFT_Project/vsim_FFT/src/complext_utils.v
+Z5 F/home/yuanpei/Project/FFT_Project/vsim_FFT/src/complext_utils.v
+L0 2
+Z6 OV;L;10.3d;59
+r1
+!s85 0
+31
+Z7 !s108 1448338367.310072
+Z8 !s107 /home/yuanpei/Project/FFT_Project/vsim_FFT/src/complext_utils.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|/home/yuanpei/Project/FFT_Project/vsim_FFT/src/complext_utils.v|
+!i113 1
+Z10 o-work work
+vcomplex_i
+R0
+!i10b 1
+!s100 TbPcIg7G:eCA=>l@nhWJZ3
+I<K2iA151LEIi^6K6l;Zo`0
+R1
+R2
+R3
+R4
+R5
+L0 28
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vcomplex_sub
+R0
+!i10b 1
+!s100 `Hbdc5U8;hA3_Sz4N5>h62
+IA@0`_jz9mUFn<Po[9j9E90
+R1
+R2
+R3
+R4
+R5
+L0 15
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vcomplex_tb
+!s110 1448341646
+!i10b 1
+!s100 :[n3]abYzlCbe>C7FW5Hm2
+IHLdCa3dbOSdBfIMh4efC02
+R1
+R2
+w1448341638
+8/home/yuanpei/Project/FFT_Project/vsim_FFT/complex_tb.v
+F/home/yuanpei/Project/FFT_Project/vsim_FFT/complex_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1448341646.293695
+!s107 /home/yuanpei/Project/FFT_Project/vsim_FFT/complex_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/yuanpei/Project/FFT_Project/vsim_FFT/complex_tb.v|
+!i113 1
+R10
+vr4_bf
+!s110 1448430109
+!i10b 1
+!s100 Q_2T<Veo5nDLSTm@i^EKT3
+I4_LXHejBlP=ToUo<FQeHV0
+R1
+R2
+w1448402128
+8/home/yuanpei/Project/FFT_Project/vsim_FFT/fft_utils.v
+F/home/yuanpei/Project/FFT_Project/vsim_FFT/fft_utils.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1448430109.593046
+!s107 /home/yuanpei/Project/FFT_Project/vsim_FFT/fft_utils.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/yuanpei/Project/FFT_Project/vsim_FFT/fft_utils.v|
+!i113 1
+R10
+vr4_unit
+Z11 !s110 1448475927
+!i10b 1
+!s100 o]>5S:@OPHXl9@bC[49BM1
+IMZ_JNe1VNX?_<GoCl7[b01
+R1
+R2
+Z12 w1448475920
+Z13 8/home/yuanpei/Project/FFT_Project/vsim_FFT/r4_unit.v
+Z14 F/home/yuanpei/Project/FFT_Project/vsim_FFT/r4_unit.v
+L0 49
+R6
+r1
+!s85 0
+31
+Z15 !s108 1448475927.157836
+Z16 !s107 /home/yuanpei/Project/FFT_Project/vsim_FFT/r4_unit.v|
+Z17 !s90 -reportprogress|300|-work|work|-stats=none|/home/yuanpei/Project/FFT_Project/vsim_FFT/r4_unit.v|
+!i113 1
+R10
+vr4_unit_ctl
+R11
+!i10b 1
+!s100 P5WT9]>`f2P6zBIPI4;EP2
+IE[Nm_OCoOPakM_MD1DPf]1
+R1
+R2
+R12
+R13
+R14
+L0 2
+R6
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 1
+R10
+vr4_unit_tb
+!s110 1448475985
+!i10b 1
+!s100 X]4N1AIFbL4A9UPf7lAV63
+I1alV4iUo@QYR275Te`hDV0
+R1
+R2
+w1448475977
+8/home/yuanpei/Project/FFT_Project/vsim_FFT/r4_unit_tb.v
+F/home/yuanpei/Project/FFT_Project/vsim_FFT/r4_unit_tb.v
+L0 3
+R6
+r1
+!s85 0
+31
+!s108 1448475985.406731
+!s107 /home/yuanpei/Project/FFT_Project/vsim_FFT/r4_unit_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/yuanpei/Project/FFT_Project/vsim_FFT/r4_unit_tb.v|
+!i113 1
+R10
