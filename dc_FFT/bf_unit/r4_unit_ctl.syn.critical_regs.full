@@ -1,0 +1,192 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10000
+        -sort_by slack
+Design : r4_unit_ctl
+Version: J-2014.09-SP2
+Date   : Wed Nov 25 14:55:22 2015
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: state_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: state_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg_0_/CK (DFFHQX4TS)              0.00       0.00 r
+  state_reg_0_/Q (DFFHQX4TS)               0.30       0.30 f
+  U12/Y (XOR2X4TS)                         0.19       0.48 r
+  U14/Y (NOR2X2TS)                         0.10       0.58 f
+  state_reg_1_/D (DFFHQX4TS)               0.00       0.58 f
+  data arrival time                                   0.58
+
+  clock clk (rise edge)                    0.80       0.80
+  clock network delay (ideal)              0.00       0.80
+  state_reg_1_/CK (DFFHQX4TS)              0.00       0.80 r
+  library setup time                      -0.23       0.57
+  data required time                                  0.57
+  -----------------------------------------------------------
+  data required time                                  0.57
+  data arrival time                                  -0.58
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.02
+
+
+  Startpoint: state_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ld0 (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg_0_/CK (DFFHQX4TS)              0.00       0.00 r
+  state_reg_0_/Q (DFFHQX4TS)               0.30       0.30 f
+  U8/Y (INVX2TS)                           0.08       0.38 r
+  U7/Y (INVX3TS)                           0.07       0.45 f
+  U9/Y (NAND2X1TS)                         0.14       0.59 r
+  U11/Y (OAI2BB1X1TS)                      0.17       0.76 f
+  ld0 (out)                                0.00       0.76 f
+  data arrival time                                   0.76
+
+  clock clk (rise edge)                    0.80       0.80
+  clock network delay (ideal)              0.00       0.80
+  output external delay                   -0.05       0.75
+  data required time                                  0.75
+  -----------------------------------------------------------
+  data required time                                  0.75
+  data arrival time                                  -0.76
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: state_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: state_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg_0_/CK (DFFHQX4TS)              0.00       0.00 r
+  state_reg_0_/Q (DFFHQX4TS)               0.30       0.30 f
+  U8/Y (INVX2TS)                           0.08       0.38 r
+  U7/Y (INVX3TS)                           0.07       0.45 f
+  U16/Y (NOR2X1TS)                         0.12       0.57 r
+  state_reg_0_/D (DFFHQX4TS)               0.00       0.57 r
+  data arrival time                                   0.57
+
+  clock clk (rise edge)                    0.80       0.80
+  clock network delay (ideal)              0.00       0.80
+  state_reg_0_/CK (DFFHQX4TS)              0.00       0.80 r
+  library setup time                      -0.22       0.58
+  data required time                                  0.58
+  -----------------------------------------------------------
+  data required time                                  0.58
+  data arrival time                                  -0.57
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: state_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: by_pass (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg_0_/CK (DFFHQX4TS)              0.00       0.00 r
+  state_reg_0_/Q (DFFHQX4TS)               0.30       0.30 f
+  U8/Y (INVX2TS)                           0.08       0.38 r
+  U7/Y (INVX3TS)                           0.07       0.45 f
+  U9/Y (NAND2X1TS)                         0.14       0.59 r
+  by_pass (out)                            0.00       0.59 r
+  data arrival time                                   0.59
+
+  clock clk (rise edge)                    0.80       0.80
+  clock network delay (ideal)              0.00       0.80
+  output external delay                   -0.05       0.75
+  data required time                                  0.75
+  -----------------------------------------------------------
+  data required time                                  0.75
+  data arrival time                                  -0.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.16
+
+
+  Startpoint: state_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ld2 (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg_1_/CK (DFFHQX4TS)              0.00       0.00 r
+  state_reg_1_/Q (DFFHQX4TS)               0.29       0.29 f
+  U10/Y (CLKINVX6TS)                       0.06       0.35 r
+  U15/Y (CLKINVX1TS)                       0.11       0.46 f
+  ld2 (out)                                0.00       0.46 f
+  data arrival time                                   0.46
+
+  clock clk (rise edge)                    0.80       0.80
+  clock network delay (ideal)              0.00       0.80
+  output external delay                   -0.05       0.75
+  data required time                                  0.75
+  -----------------------------------------------------------
+  data required time                                  0.75
+  data arrival time                                  -0.46
+  -----------------------------------------------------------
+  slack (MET)                                         0.29
+
+
+  Startpoint: state_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ld1 (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg_0_/CK (DFFHQX4TS)              0.00       0.00 r
+  state_reg_0_/Q (DFFHQX4TS)               0.30       0.30 f
+  U8/Y (INVX2TS)                           0.08       0.38 r
+  U7/Y (INVX3TS)                           0.07       0.45 f
+  ld1 (out)                                0.00       0.45 f
+  data arrival time                                   0.45
+
+  clock clk (rise edge)                    0.80       0.80
+  clock network delay (ideal)              0.00       0.80
+  output external delay                   -0.05       0.75
+  data required time                                  0.75
+  -----------------------------------------------------------
+  data required time                                  0.75
+  data arrival time                                  -0.45
+  -----------------------------------------------------------
+  slack (MET)                                         0.30
+
+
+1
