@@ -1,4 +1,19 @@
-/home/yuanpei/Project/FFT_Project/vsim_FFT/src/complext_utils.v {1 {vlog -work work -stats=none /home/yuanpei/Project/FFT_Project/vsim_FFT/src/complext_utils.v
+/home/yuanpei/Project/FFT_Project/vsim_FFT/fft_16p_tb.v {1 {vlog -work work -stats=none /home/yuanpei/Project/FFT_Project/vsim_FFT/fft_16p_tb.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module fft_16p_tb
+
+Top level modules:
+	fft_16p_tb
+
+} {} {}} /home/yuanpei/Project/FFT_Project/vsim_FFT/fft_4p.v {1 {vlog -work work -stats=none /home/yuanpei/Project/FFT_Project/vsim_FFT/fft_4p.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module fft_4p_unit_ctl
+-- Compiling module fft_4p_unit
+
+Top level modules:
+	fft_4p_unit
+
+} {} {}} /home/yuanpei/Project/FFT_Project/vsim_FFT/src/complext_utils.v {1 {vlog -work work -stats=none /home/yuanpei/Project/FFT_Project/vsim_FFT/src/complext_utils.v
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 -- Compiling module complex_add
 -- Compiling module complex_sub
@@ -16,6 +31,23 @@ Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 Top level modules:
 	r4_bf
 
+} {} {}} /home/yuanpei/Project/FFT_Project/vsim_FFT/cordic_utils.v {2 {vlog -work work -stats=none /home/yuanpei/Project/FFT_Project/vsim_FFT/cordic_utils.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module cordic_iter
+** Warning: /home/yuanpei/Project/FFT_Project/vsim_FFT/cordic_utils.v(6): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
+-- Compiling module cordic_nppl
+
+Top level modules:
+	cordic_nppl
+
+} {} {}} /home/yuanpei/Project/FFT_Project/vsim_FFT/fft_16p_unit.v {1 {vlog -work work -stats=none /home/yuanpei/Project/FFT_Project/vsim_FFT/fft_16p_unit.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module fft_16p_unit_ctl
+-- Compiling module fft_16p_unit
+
+Top level modules:
+	fft_16p_unit
+
 } {} {}} /home/yuanpei/Project/FFT_Project/vsim_FFT/r4_unit.v {1 {vlog -work work -stats=none /home/yuanpei/Project/FFT_Project/vsim_FFT/r4_unit.v
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 -- Compiling module r4_unit_ctl
@@ -30,5 +62,19 @@ Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 
 Top level modules:
 	complex_tb
+
+} {} {}} /home/yuanpei/Project/FFT_Project/vsim_FFT/cordic_tb.v {1 {vlog -work work -stats=none /home/yuanpei/Project/FFT_Project/vsim_FFT/cordic_tb.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module cordic_tb
+
+Top level modules:
+	cordic_tb
+
+} {} {}} /home/yuanpei/Project/FFT_Project/vsim_FFT/r4_unit_tb.v {1 {vlog -work work -stats=none /home/yuanpei/Project/FFT_Project/vsim_FFT/r4_unit_tb.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module r4_unit_tb
+
+Top level modules:
+	r4_unit_tb
 
 } {} {}}

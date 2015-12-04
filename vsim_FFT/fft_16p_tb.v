@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module r4_unit_tb ();
+module fft_16p_tb ();
 	reg clk;
 	reg rst_n;
 	reg signed [15 : 0] data_in_r;
@@ -11,7 +11,7 @@ module r4_unit_tb ();
 // Clock signal
 initial begin
 	clk = '1;
-	repeat (20) begin
+	repeat (100) begin
 		#5
 		clk = ~clk;
 	end
@@ -34,7 +34,7 @@ always @(posedge clk) begin
 end
 
 // Instantiate DUT
-r4_unit r4_dut(
+fft_16p_unit fft16_dut(
 	.clk(clk),
 	.rst_n(rst_n),
 	.data_in_r(data_in_r),

@@ -1,5 +1,5 @@
 // FSM controller for r4_unit
-module r4_unit_ctl (clk, rst_n, by_pass, ld0, ld1, ld2);
+module fft_4p_unit_ctl (clk, rst_n, by_pass, ld0, ld1, ld2);
 	input clk;
 	input rst_n;
 	output reg by_pass, ld0, ld1, ld2;
@@ -46,7 +46,7 @@ module r4_unit_ctl (clk, rst_n, by_pass, ld0, ld1, ld2);
 	end
 endmodule
 
-module r4_unit (clk, rst_n, data_in_r, data_in_i, data_out_r, data_out_i);
+module fft_4p_unit (clk, rst_n, data_in_r, data_in_i, data_out_r, data_out_i);
 	input clk;
 	input rst_n;
 	
@@ -95,7 +95,7 @@ module r4_unit (clk, rst_n, data_in_r, data_in_i, data_out_r, data_out_i);
 		.f3_r(f3_r),
 		.f3_i(f3_i));
 
-	r4_unit_ctl controller (
+	fft_4p_unit_ctl controller (
 		.clk(clk),
 		.rst_n(rst_n),
 		.ld0(ld0),
@@ -158,7 +158,7 @@ module r4_unit (clk, rst_n, data_in_r, data_in_i, data_out_r, data_out_i);
 			end
 			else if (ld1 == 1) begin
 				data_out_r <= data_1_r;
-				data_out_r <= data_1_i;
+				data_out_i <= data_1_i;
 			end
 			else if (ld2 == 1) begin
 				data_out_r <= data_2_r;
