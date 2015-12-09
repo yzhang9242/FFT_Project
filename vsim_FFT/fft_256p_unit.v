@@ -135,7 +135,7 @@ module fft_256p_unit (clk, rst_n, enable, data_in_r, data_in_i, data_out_r, data
 		.f3_r(f3_r),
 		.f3_i(f3_i));
 
-	fft_64p_unit_ctl controller (
+	fft_256p_unit_ctl controller (
 		.clk(clk),
 		.rst_n(rst_n),
 		.enable(enable),
@@ -512,7 +512,7 @@ module fft_256pt_stage (clk, rst_n, enable, data_r_in, data_i_in, data_r_out, da
 				.min90_out(min90_imd));
 
 	// Connections are based on pls90 and min90
-	always @(posedge clk or rst_n) begin
+	always @(posedge clk) begin
 		if (rst_n == 0) begin
 			real_part <= 0;
 			img_part <= 0;

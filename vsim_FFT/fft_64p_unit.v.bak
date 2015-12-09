@@ -311,7 +311,7 @@ module fft_64pt_stage (clk, rst_n, enable, data_r_in, data_i_in, data_r_out, dat
 				.data_out_r(real_imd),
 				.data_out_i(img_imd));
 
-	fft_64pt_rotate_ctl rotate_16pt_stage_ctl(
+	fft_64pt_rotate_ctl rotate_64pt_stage_ctl(
 				.clk(clk),
 				.rst_n(rst_n),
 				.enable(enable),

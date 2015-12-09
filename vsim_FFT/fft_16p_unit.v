@@ -386,7 +386,7 @@ module fft_16pt_stage (clk, rst_n, enable, data_r_in, data_i_in, data_r_out, dat
 				.min90_out(min90_imd));
 
 	// Connections are based on pls90 and min90
-	always @(posedge clk or rst_n) begin
+	always @(posedge clk) begin
 		if (rst_n == 0) begin
 			real_part <= 0;
 			img_part <= 0;

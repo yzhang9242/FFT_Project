@@ -8,12 +8,17 @@ module fft_main_tb ();
 	wire signed [15 : 0] data_out_r;
 	wire signed [15 : 0] data_out_i;
 
+	wire OE;
+
 	integer input_file;
 	integer input_cap;
+	integer output_file;
+	integer output_cap;
 
 initial begin
 	input_file = $fopen("fft.in", "r");
 	input_cap = $fscanf(input_file, "%d\n", data_in_r);	
+	output_file = $fopen("fft_v.out", "w");
 end
 
 // Clock signal
@@ -41,6 +46,10 @@ always @(posedge clk) begin
 	end
 end
 
+always @(posedge clk) begin
+	if (OE)
+		$fwrite(output_file, "%d\n", data_out_i);
+end
 // Instantiate DUT
 fft_256pt_main fft256_dut(
 	.clk(clk),
@@ -48,6 +57,7 @@ fft_256pt_main fft256_dut(
 	.data_r_in(data_in_r),
 	.data_i_in(data_in_i),
 	.data_r_out(data_out_r), 
-	.data_i_out(data_out_i));
+	.data_i_out(data_out_i),
+	.OE(OE));
 
 endmodule

@@ -1,4 +1,4 @@
-module global_ctl (clk, rst_n, stage_256_en, stage_64_en, stage_16_en, stage_4_en);
+module global_ctl (clk, rst_n, stage_256_en, stage_64_en, stage_16_en, stage_4_en, OE);
 	input clk;
 	input rst_n;
 	
@@ -6,6 +6,7 @@ module global_ctl (clk, rst_n, stage_256_en, stage_64_en, stage_16_en, stage_4_e
 	output reg stage_64_en;
 	output reg stage_16_en;
 	output reg stage_4_en;
+	output reg OE;
 
 	reg [9 : 0] state;
 
@@ -41,9 +42,15 @@ module global_ctl (clk, rst_n, stage_256_en, stage_64_en, stage_16_en, stage_4_e
 		else
 			stage_4_en <= 0;
 	end
+	always @(state) begin
+		if (state > 257)
+			OE <= 1;
+		else
+			OE <= 0;
+	end
 endmodule
 
-module fft_256pt_main (clk, rst_n, data_r_in, data_i_in, data_r_out, data_i_out);
+module fft_256pt_main (clk, rst_n, data_r_in, data_i_in, data_r_out, data_i_out, OE);
 	input clk;
 	input rst_n;
 
@@ -51,6 +58,7 @@ module fft_256pt_main (clk, rst_n, data_r_in, data_i_in, data_r_out, data_i_out)
 	input signed [15 : 0] data_i_in;
 	output signed [15 : 0] data_r_out;
 	output signed [15 : 0] data_i_out;
+	output OE;
 
 	wire stage_256_en;
 	wire stage_64_en;
@@ -71,7 +79,8 @@ module fft_256pt_main (clk, rst_n, data_r_in, data_i_in, data_r_out, data_i_out)
 			.stage_256_en(stage_256_en),
 			.stage_64_en(stage_64_en),
 			.stage_16_en(stage_16_en),
-			.stage_4_en(stage_4_en));
+			.stage_4_en(stage_4_en),
+			.OE(OE));
 
 	fft_256pt_stage fft_256pt (
 			.clk(clk),

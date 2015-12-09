@@ -14,7 +14,6 @@ Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 -- Compiling module fft_256pt_stage
 
 Top level modules:
-	fft_256p_unit_ctl
 	fft_256pt_stage
 
 } {} {}} /home/yuanpei/Project/FFT_Project/vsim_FFT/fft_4p.v {1 {vlog -work work -stats=none /home/yuanpei/Project/FFT_Project/vsim_FFT/fft_4p.v
@@ -104,18 +103,18 @@ Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 Top level modules:
 	cordic_tb
 
-} {} {}} /home/yuanpei/Project/FFT_Project/vsim_FFT/sr_tb.v {1 {vlog -work work -stats=none /home/yuanpei/Project/FFT_Project/vsim_FFT/sr_tb.v
-Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
--- Compiling module sr_tb
-
-Top level modules:
-	sr_tb
-
 } {} {}} /home/yuanpei/Project/FFT_Project/vsim_FFT/r4_unit_tb.v {1 {vlog -work work -stats=none /home/yuanpei/Project/FFT_Project/vsim_FFT/r4_unit_tb.v
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 -- Compiling module r4_unit_tb
 
 Top level modules:
 	r4_unit_tb
+
+} {} {}} /home/yuanpei/Project/FFT_Project/vsim_FFT/sr_tb.v {1 {vlog -work work -stats=none /home/yuanpei/Project/FFT_Project/vsim_FFT/sr_tb.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module sr_tb
+
+Top level modules:
+	sr_tb
 
 } {} {}}

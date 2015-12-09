@@ -32,10 +32,10 @@ void bit_reverse(COMPLEX *x, int w)
 	{
 		temp = i;
 		i_s = 0;
-		for (int b = 0; b < w; b++)
+		for (int b = 0; b < w; b += 2)
 		{
-			i_s = i_s * 2 + temp % 2;
-			temp /= 2;
+			i_s = i_s * 4 + temp % 4;
+			temp /= 4;
 		}
 		result[i] = x[i_s];
 	}
