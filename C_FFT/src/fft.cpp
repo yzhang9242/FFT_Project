@@ -10,7 +10,7 @@ void fft_r2::fft_r2_bf(COMPLEX *X_out, COMPLEX *x_in, int b)
 // fft_r4 methods
 void fft_r4::fft_r4_bf(COMPLEX *X_out, COMPLEX *x_in, int b)
 {
-	COMPLEX x1_img = x_in[b] * (COMPLEX)1i;
+	COMPLEX x1_img = x_in[1 * b] * (COMPLEX)1i;
 	COMPLEX x3_img = x_in[3 * b] * (COMPLEX)1i;
 	X_out[0] = (COMPLEX)(x_in[0] + x_in[b] + x_in[2 * b] + x_in[3 * b]);
 	X_out[b] = (COMPLEX)(x_in[0] - x1_img - x_in[2 * b] + x3_img);

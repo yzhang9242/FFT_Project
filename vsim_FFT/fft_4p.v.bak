@@ -47,7 +47,7 @@ module fft_4p_unit_ctl (clk, rst_n, enable, by_pass, ld0, ld1, ld2);
 	end
 endmodule
 
-module fft_4pt_stage (clk, rst_n, enable, data_in_r, data_in_i, data_out_r, data_out_i);
+module fft_4p_unit (clk, rst_n, enable, data_in_r, data_in_i, data_out_r, data_out_i);
 	input clk;
 	input rst_n;
 	input enable;

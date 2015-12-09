@@ -34,9 +34,9 @@ module cordic_tb ();
 			z_in <= '0;
 		end
 		else begin
-			real_in <= 24;
+			real_in <= 512;
 			img_in <= 0;
-			z_in <= 0;
+			z_in <= 29184;
 		end
 	end
 endmodule

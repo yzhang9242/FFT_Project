@@ -13,8 +13,8 @@ module cordic_iter (real_in, img_in, z_in, real_out, img_out, z_out, theta, sh);
 	wire u;
 
 	assign u = z_in[15];
-	assign real_shd = real_in >>> sh;
-	assign img_shd = img_in >>> sh;
+	assign real_shd = real_in >> sh;
+	assign img_shd = img_in >> sh;
 
 	always @(real_in or img_in or z_in) begin
 		if (u == 0) begin

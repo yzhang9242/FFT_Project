@@ -359,6 +359,11 @@ module fft_16pt_stage (clk, rst_n, enable, data_r_in, data_i_in, data_r_out, dat
 	wire pls90_imd;
 	wire min90_imd;
 
+	// Data to be rotated
+	//wire signed [15 : 0] real_2_r;
+	//wire signed [15 : 0] img_2_r;
+	//wire signed [15 : 0] z_2_r;
+
 	// Input data for rotater
 	reg signed [15 : 0] real_part;
 	reg signed [15 : 0] img_part;
