@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version J-2014.09-SP2 for amd64 -- Nov 25, 2014
-#@ # Date:   Wed Nov 25 14:31:50 2015
+#@ # Date:   Thu Mar 10 21:49:29 2016
 #@ # Run by: yz2727@cadpc32
 #@ 
 
@@ -3756,14 +3756,5 @@ source /usr/cad/syn/admin/setup/.synopsys_dc.setup
 #@ 
 #@ # -- End source /usr/cad/syn/admin/setup/.synopsys_dc.setup
 
-ls
-ls ../vsim_FFT/
-read_verilog ../vsim_FFT/r4_unit.v
-list_design
-clear
-list_design
-current_design r4_unit_ctl
-link
-check_design
-compile_ultra
+exi
 exit
